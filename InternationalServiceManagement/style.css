@@ -1,0 +1,31 @@
+#box{
+    width: 100px;
+    height: 100px;
+    background: red;
+  }
+  #wrapperBox{
+      position: relative;
+      height: 110px;
+  }
+  .right{
+    position: absolute;
+    animation: example 1s forwards;
+  }
+
+  .left{
+    position: absolute;
+    animation: example2 1s forwards;
+  }
+  
+  .btn-list{
+    margin-top: 10px;
+  }
+
+@keyframes example {
+  0%   {left: 0;}
+  100% {left: calc(100% - 100px);};
+}
+@keyframes example2 {
+    0%   {right: 0;}
+    100% {right: calc(100% - 100px);};
+}
